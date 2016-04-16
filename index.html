@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script
+src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+
+<script type="application/javascript">
+  $(function() {
+    $.getJSON("https://api.ipify.org?format=jsonp&callback=?",
+      function(json) {
+        document.write("Vasa ip adresa je: ", json.ip);
+      }
+    );
+  });
+</script>
+
+</head>
+
+<body>
+
+</body>
+
+</html>
